@@ -16,24 +16,16 @@ export default function Form(props: FormProps) {
     <div className={`form ${props.className ?? ""}`}>
       {props.title && <h2 className="formTitle">{props.title}</h2>}
       {props.subTitle && <h3 className="formSubtitle">{props.subTitle}</h3>}
-      {/* <form onSubmit={props.onSubmit}>
-				{props.children}
-				<input
-					disabled={props.buttonDisabled ?? false}
-					className={`formSubmitButton ${
-						props.buttonDisabled ? "disabled" : ""
-					}`}
-					type="submit"
-					value={props.submitLabel}
-				/>
-			</form> */}
-      <button
-        onClick={props.onSubmit}
-        className={`formSubmitButton ${props.buttonDisabled ? "disabled" : ""}`}
-        type="submit"
-      >
-        {props.submitLabel}
-      </button>
+      <form onSubmit={props.onSubmit}>
+        {props.children}
+        <button
+          onClick={props.onSubmit}
+          className={`formSubmitButton ${props.buttonDisabled ? "disabled" : ""}`}
+          type="submit"
+        >
+          {props.submitLabel}
+        </button>
+      </form>
     </div>
   );
 }
