@@ -20,13 +20,12 @@ export default function Form(props: FormProps) {
       )}
       <form onSubmit={props.onSubmit}>
         {props.children}
-        <input
-          disabled={props.buttonDisabled ?? false}
+        <button disabled={props.buttonDisabled ?? false}
           className={`formSubmitButton ${props.buttonDisabled ? "disabled" : ""
             }`}
-          type="submit"
-          value={props.submitLabel}
-        />
+          type="submit">
+          {props.submitLabel}
+        </button>
       </form>
     </div>
   );
