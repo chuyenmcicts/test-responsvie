@@ -1,0 +1,55 @@
+.MuiTextField-root {
+	border-radius: 6px;
+	border: none;
+	line-height: 15px;
+	position: relative;
+	font-size: 19px;
+	outline: none;
+	background: white;
+	border-color: red;
+	width: 100%;
+	height: 41px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+	border-color: #ebeded !important;
+	border-width: 1px;
+}
+
+.Mui-focused>.MuiOutlinedInput-notchedOutline {
+	border-color: red !important;
+	border-width: 1px !important;
+}
+
+.MuiInputBase-input {
+	padding: 10px !important;
+	font-size: 13px !important;
+}
+
+.inputLabel {
+	font-size: 13px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.inputWrapper {
+	position: relative;
+}
+
+#hideToggle {
+	display: none;
+	visibility: hidden;
+}
+
+.inputError {
+	color: #f16552;
+	font-size: 10px;
+}
+
+.shareReport .inputError {
+	position: absolute;
+}
+
+.checkboxIcon {
+	cursor: pointer;
+}

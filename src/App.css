@@ -1,38 +1,261 @@
-.App {
-  text-align: center;
+.rightSection {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rammpLogo {
+	padding: 0;
+	position: absolute;
+	top: 4vh;
+	left: 4vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#login .rammpLogo {
+	width: 180px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#login .formTitle {
+	line-height: 1.1;
+}
+#login .rightSectionText {
+	margin-top: 5vh;
+	max-width: 48%;
+	min-width: 380px;
+	font-size: 16px;
+	padding-left: 5vw;
 }
 
-.App-link {
-  color: #61dafb;
+.rightSectionSubtext {
+	display: block;
+	margin-top: 20px;
+	font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginForm {
+	margin: 110px auto 38px;
+	position: relative;
+}
+
+#login .flexSpaceAround {
+	flex-direction: column;
+}
+
+.googleButton {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: none;
+	font-size: 16px;
+	/* margin-top: 30px; */
+	text-align: center;
+	border-radius: 6px;
+	cursor: pointer;
+	width: 100%;
+	line-height: 41px;
+}
+
+.googleIcon {
+	padding: 0 17px 0 0;
+	margin-bottom: -4px;
+	width: 22px;
+}
+
+.goToRegister {
+	margin-top: 27px;
+	color: #a8a8a8;
+	font-size: 13px;
+	text-align: center;
+}
+#login .inputLabel {
+	margin-bottom: 8px;
+}
+#login .forgotpasswordButton {
+	margin-top: 16px;
+}
+.registerButton {
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	color: #f16552;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+#login .formSubtitle {
+	font-size: 15px;
+}
+.forgotpasswordButton {
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	float: right;
+	margin-top: 14.5px;
+}
+
+.grayText {
+	color: #a8a8a8;
+	font-weight: 400;
+	font-size: 12.5px;
+}
+
+.invalidCredentials {
+	margin-top: 12px;
+	background-color: #ff000012;
+	color: #ff0000;
+	width: 100%;
+	border-radius: 6px;
+	border: none;
+	line-height: 41px;
+	outline: none;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.invalidCredentials2 {
+	margin-top: 12px;
+	color: #f16552;
+	width: 100%;
+	border-radius: 6px;
+	border: none;
+	line-height: 41px;
+	outline: none;
+	font-size: 13px;
+	font-weight: 400;
+
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 500ms;
+	width: 26vw;
+	margin: auto;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.invalidIcon {
+	width: 21px;
+	margin: 0 0 -5.5px 18px;
+}
+
+#login .formSubmitButton {
+	font-size: 16px;
+	line-height: 41px;
+}
+
+.invalidCredentials > span {
+	user-select: none;
+}
+
+@media screen and (max-height: 768px) {
+	#login .rammpLogo {
+		top: 30px;
+	}
+	#login .rightSectionText {
+		margin-top: 39px;
+	}
+}
+
+@media screen and (max-width: 899px) {
+	#login .form {
+		width: 80%;
+	}
+
+	#login .grayText {
+		font-size: 12.5px;
+		font-weight: 200;
+	}
+	#login .inputLabel {
+		margin-bottom: 8px;
+	}
+	#login .forgotpasswordButton {
+		font-size: 13px;
+		margin-top: 15px;
+	}
+	#login .rammpLogo {
+		margin-left: 22px;
+	}
+	#login .invalidCredentials > span {
+		font-size: 13px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	#login .googleButton {
+		font-size: 15px;
+	}
+	#login #login #login #login #login .rammpLogo {
+		left: 36px;
+	}
+	#login .formTitle {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 1.1;
+		margin-bottom: 10px;
+	}
+	.form {
+		width: 70%;
+	}
+	#login .formSubmitButton {
+		line-height: 49px;
+	}
+	#login .goToRegister {
+		margin-top: 50px;
+		font-size: 16px;
+	}
+	.registerButton {
+		font-size: 16px;
+	}
+	#login .formSubtitle {
+		font-size: 22px;
+	}
+	.googleButton {
+		line-height: 49px;
+	}
+	.invalidCredentials {
+		line-height: 49px;
+	}
+	.invalidCredentials2 {
+		width: auto;
+		margin-top: -30px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.invalidCredentials2 {
+		width: auto;
+	}
+}
+
+.fullHeight {
+	height: 100%;
+}
+
+@media screen and (max-width: 899px) {
+	.hiddenMobile {
+		display: none;
+	}
+
+	.form {
+		width: 2vw;
+	}
+
+	.MuiTextField-root {
+		height: 49px !important;
+	}
+
+	.MuiOutlinedInput-input {
+		height: 49px;
+	}
+
+	.MuiOutlinedInput-root {
+		height: 49px !important;
+	}
 }
