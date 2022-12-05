@@ -22,8 +22,9 @@
 	border-radius: 6px;
 	color: white;
 	font-size: 20px;
-	line-height: 49px;
+	line-height: 41px;
 	width: 100%;
+	min-height: 49px;
 }
 
 .form {
