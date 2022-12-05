@@ -16,7 +16,7 @@
 
 .formSubmitButton {
 	margin-top: 30px;
-	background: #f16552 no-repeat center center fixed;
+	background: #f16552;
 	border: none;
 	cursor: pointer;
 	border-radius: 6px;
@@ -24,10 +24,6 @@
 	font-size: 20px;
 	line-height: 41px;
 	width: 100%;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .form {
