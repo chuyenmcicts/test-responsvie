@@ -5,7 +5,7 @@ interface FormProps {
   title?: string | ReactNode;
   subTitle?: string | ReactNode;
   children: ReactNode;
-  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  onSubmit: (event: any) => void;
   submitLabel: string;
   className: string;
   buttonDisabled?: boolean;
@@ -18,7 +18,7 @@ export default function Form(props: FormProps) {
       {props.subTitle && (
         <h3 className="formSubtitle">{props.subTitle}</h3>
       )}
-      <form onSubmit={props.onSubmit}>
+      <div onClick={props.onSubmit}>
         {props.children}
         <button disabled={props.buttonDisabled ?? false}
           className={`formSubmitButton ${props.buttonDisabled ? "disabled" : ""
@@ -26,7 +26,7 @@ export default function Form(props: FormProps) {
           type="submit">
           {props.submitLabel}
         </button>
-      </form>
+      </div>
     </div>
   );
 }
